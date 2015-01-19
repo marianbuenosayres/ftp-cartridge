@@ -54,6 +54,9 @@ function ishttpup() {
 }
 
 function start_app() {
+    echo "start_app: Initial data"
+    echo "OPENSHIFT_FTP_IP : ${OPENSHIFT_FTP_IP}"
+    echo "OPENSHIFT_FTP_HTTP_PORT : ${OPENSHIFT_FTP_HTTP_PORT}"
     # Check for running app
     if isrunning; then
         echo "Application is already running" 1>&2
