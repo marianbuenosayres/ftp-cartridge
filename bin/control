@@ -69,7 +69,8 @@ function start_app() {
         sed -i -e "s/\${OPENSHIFT_FTP_IP}/$OPENSHIFT_FTP_IP/g" \
        		${OPENSHIFT_FTP_DIR}/conf/server.xml > /dev/null 2>&1
         
-        ${OPENSHIFT_FTP_DIR}/bin/startup.sh > ${OPENSHIFT_FTP_DIR}/logs/tomcat.log 2>&1 &
+        #${OPENSHIFT_FTP_DIR}/bin/startup.sh > ${OPENSHIFT_FTP_DIR}/logs/tomcat.log 2>&1 &
+        ${OPENSHIFT_FTP_DIR}/bin/catalina.sh run
         PROCESS_ID=$!
         
         echo $PROCESS_ID > $JBOSS_PID_FILE
