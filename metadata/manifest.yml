@@ -1,14 +1,15 @@
-Name: tomcat
-Cartridge-Short-Name: TOMCAT
-Cartridge-Vendor: Red Hat
+Name: ftpserver
+Cartridge-Short-Name: FTPServer
+Cartridge-Vendor: marianbuenosayres
 Cartridge-Version: 0.0.1
-Display-Name: Tomcat 8
-Description: "Apache Tomcat is an open source software implementation of the Java Servlet and JavaServer Pages technologies."
+Display-Name: FTP Server
+Description: "FTP Server implementation based on Tomcat and Java Servlet and JavaServer Pages technologies."
 Version: '8.0'
 License: ASL 2.0
 Vendor:  apache
 Categories:
   - service
+  - ftp
   - java
   - tomcat
   - tomcat8
@@ -29,6 +30,9 @@ Cart-Data:
   - Key: OPENSHIFT_INTERNAL_PORT
     Type: environment
     Description: "Internal port to which the web-framework binds to."
+  - Key: OPENSHIFT_FTP_PORT
+    Type: environment
+    Description: "Internal FTP port to which the web-framework binds to."
   - Key: OPENSHIFT_INTERNAL_IP
     Type: environment
     Description: "Internal IP to which the web-framework binds to."
@@ -87,3 +91,6 @@ Endpoints:
   - Private-IP-Name:   IP
     Private-Port-Name: JPDA_PORT
     Private-Port:      8787
+  - Private-IP-Name:   IP
+    Private-Port-Name: FTP_PORt
+    Private-Port:      2121
