@@ -4,6 +4,8 @@ set -x
 
 SYSTEM_FTP_DIR=/etc/alternatives/tomcat-8.0
 
+echo "OPENSHIFT_FTP_DIR is ${OPENSHIFT_FTP_DIR}"
+
 mkdir ${OPENSHIFT_FTP_DIR}/run
 mkdir ${OPENSHIFT_FTP_DIR}/tmp
 mkdir ${OPENSHIFT_FTP_DIR}/conf
