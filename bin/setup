@@ -14,9 +14,9 @@ mkdir ${OPENSHIFT_FTP_DIR}/logs
 mkdir ${OPENSHIFT_HOMEDIR}/.m2
 
 # Link the system Tomcat binaries to the cart Tomcat instance directory
-ln -s ${SYSTEM_FTP_DIR}/bin/bootstrap.jar ${OPENSHIFT_FTP_DIR}/bin/bootstrap.jar
-ln -s ${SYSTEM_FTP_DIR}/bin/commons-daemon.jar ${OPENSHIFT_FTP_DIR}/bin/commons-daemon.jar
-ln -s ${SYSTEM_FTP_DIR}/bin/tomcat-juli.jar ${OPENSHIFT_FTP_DIR}/bin/tomcat-juli.jar
+#ln -s ${SYSTEM_FTP_DIR}/bin/bootstrap.jar ${OPENSHIFT_FTP_DIR}/bin/bootstrap.jar
+#ln -s ${SYSTEM_FTP_DIR}/bin/commons-daemon.jar ${OPENSHIFT_FTP_DIR}/bin/commons-daemon.jar
+#ln -s ${SYSTEM_FTP_DIR}/bin/tomcat-juli.jar ${OPENSHIFT_FTP_DIR}/bin/tomcat-juli.jar
 ln -s ${SYSTEM_FTP_DIR}/lib ${OPENSHIFT_FTP_DIR}/lib
 
 # Link the user-controlled configurations to the Tomcat conf directory
