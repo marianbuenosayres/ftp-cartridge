@@ -93,5 +93,5 @@ Endpoints:
     Private-Port-Name: JPDA_PORT
     Private-Port:      8787
   - Private-IP-Name:   IP
-    Private-Port-Name: FTP_PORt
+    Private-Port-Name: FTP_PORT
     Private-Port:      2121
