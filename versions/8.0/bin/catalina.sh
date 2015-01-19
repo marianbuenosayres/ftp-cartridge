@@ -200,6 +200,33 @@ else
   CLASSPATH=$CLASSPATH:$CATALINA_HOME/bin/tomcat-juli.jar
 fi
 
+#Add libs
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/annotations-api.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/catalina-ant.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/catalina-ha.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/catalina.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/catalina-storeconfig.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/catalina-tribes.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/ecj-4.4.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/el-api.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/jasper-el.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/jasper.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/jsp-api.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/servlet-api.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-api.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-coyote.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-dbcp.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-i18n-es.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-i18n-fr.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-i18n-ja.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-jdbc.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-jni.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-spdy.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-util.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-util-scan.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/tomcat-websocket.jar
+CLASSPATH=$CLASSPATH:$CATALINA_HOME/lib/websocket-api.jar
+
 # Bugzilla 37848: When no TTY is available, don't output to console
 have_tty=0
 if [ "`tty`" != "not a tty" ]; then
