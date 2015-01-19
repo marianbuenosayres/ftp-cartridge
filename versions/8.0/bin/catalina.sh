@@ -236,6 +236,8 @@ fi
 #JAVA_OPTS="$JAVA_OPTS -Dorg.apache.catalina.security.SecurityListener.UMASK=`umask`"
 JAVA_OPTS="$JAVA_OPTS -Dserver.data.ftp.port=$OPENSHIFT_FTP_PORT"
 
+echo "JAVA_OPTS is $JAVA_OPTS"
+
 # ----- Execute The Requested Command -----------------------------------------
 
 # Bugzilla 37848: only output this if we have a TTY
