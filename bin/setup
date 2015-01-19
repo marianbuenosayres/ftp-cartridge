@@ -17,7 +17,7 @@ mkdir ${OPENSHIFT_HOMEDIR}/.m2
 #ln -s ${SYSTEM_FTP_DIR}/bin/bootstrap.jar ${OPENSHIFT_FTP_DIR}/bin/bootstrap.jar
 #ln -s ${SYSTEM_FTP_DIR}/bin/commons-daemon.jar ${OPENSHIFT_FTP_DIR}/bin/commons-daemon.jar
 #ln -s ${SYSTEM_FTP_DIR}/bin/tomcat-juli.jar ${OPENSHIFT_FTP_DIR}/bin/tomcat-juli.jar
-ln -s ${SYSTEM_FTP_DIR}/lib ${OPENSHIFT_FTP_DIR}/lib
+#ln -s ${SYSTEM_FTP_DIR}/lib ${OPENSHIFT_FTP_DIR}/lib
 
 # Link the user-controlled configurations to the Tomcat conf directory
 cp ${OPENSHIFT_FTP_DIR}/versions/8.0/conf/* ${OPENSHIFT_FTP_DIR}/conf
