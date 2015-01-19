@@ -1,5 +1,5 @@
 Name: ftpserver
-Cartridge-Short-Name: FTPServer
+Cartridge-Short-Name: FTP
 Cartridge-Vendor: marianbuenosayres
 Cartridge-Version: 0.0.1
 Display-Name: FTP Server
@@ -19,7 +19,7 @@ Source-Url: https://github.com/marianbuenosayres/ftp-cartridge.git
 Help-Topics:
   "Developer Center": http://http://tomcat.apache.org/
 Cart-Data:
-  - Key: OPENSHIFT_TOMCAT_LOG_DIR
+  - Key: OPENSHIFT_FTP_LOG_DIR
     Type: environment
     Description: "Directory to store application log files."
   - Key: OPENSHIFT_TMP_DIR
