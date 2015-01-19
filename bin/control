@@ -54,9 +54,6 @@ function ishttpup() {
 }
 
 function start_app() {
-    echo "start_app: Initial data"
-    echo "OPENSHIFT_FTP_IP : ${OPENSHIFT_FTP_IP}"
-    echo "OPENSHIFT_FTP_PORT : ${OPENSHIFT_FTP_PORT}"
     # Check for running app
     if isrunning; then
         echo "Application is already running" 1>&2
@@ -65,7 +62,9 @@ function start_app() {
         export CATALINA_HOME=$OPENSHIFT_FTP_DIR
         export CATALINA_BASE=$OPENSHIFT_FTP_DIR
         export CATALINA_TMPDIR=${OPENSHIFT_FTP_DIR}/tmp
-        
+
+        echo "CATALINA_HOME is $CATALINA_HOME"
+ 
         sed -i -e "s/\${OPENSHIFT_FTP_IP}/$OPENSHIFT_FTP_IP/g" \
        		${OPENSHIFT_FTP_DIR}/conf/server.xml > /dev/null 2>&1
         

@@ -236,12 +236,10 @@ fi
 #JAVA_OPTS="$JAVA_OPTS -Dorg.apache.catalina.security.SecurityListener.UMASK=`umask`"
 JAVA_OPTS="$JAVA_OPTS -Dserver.data.ftp.port=$OPENSHIFT_FTP_PORT"
 
-echo "JAVA_OPTS is $JAVA_OPTS"
-
 # ----- Execute The Requested Command -----------------------------------------
 
 # Bugzilla 37848: only output this if we have a TTY
-if [ $have_tty -eq 1 ]; then
+#if [ $have_tty -eq 1 ]; then
   echo "Using CATALINA_BASE:   $CATALINA_BASE"
   echo "Using CATALINA_HOME:   $CATALINA_HOME"
   echo "Using CATALINA_TMPDIR: $CATALINA_TMPDIR"
@@ -255,7 +253,7 @@ if [ $have_tty -eq 1 ]; then
   if [ ! -z "$CATALINA_PID" ]; then
     echo "Using CATALINA_PID:    $CATALINA_PID"
   fi
-fi
+#fi
 
 if [ "$1" = "jpda" ] ; then
   if [ -z "$JPDA_TRANSPORT" ]; then
